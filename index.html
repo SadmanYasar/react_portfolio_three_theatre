@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MGS - Experience</title>
+  <meta name="description"
+    content="Metal Gear Solid Scrollable Environment made with React Three Fiber and Theatre.js by Sadman Yasar Sayem, freelancer on Upwork" />
+  <meta name="keywords" content="theatre.js, fly-through, 3d, react three fiber, Upwork" />
+  <meta name="author" content="Sadman Yasar Sayem" />
+  <link rel="shortcut icon" href="favicon.ico" />
+  <link rel="stylesheet" type="text/css" href="css/base.css" />
+  <script>
+    document.documentElement.className = "js";
+    var supportsCssVars = function () {
+      var e,
+        t = document.createElement("style");
+      return (
+        (t.innerHTML = "root: { --tmp-var: bold; }"),
+        document.head.appendChild(t),
+        (e = !!(
+          window.CSS &&
+          window.CSS.supports &&
+          window.CSS.supports("font-weight", "var(--tmp-var)")
+        )),
+        t.parentNode.removeChild(t),
+        e
+      );
+    };
+    supportsCssVars() ||
+      alert(
+        "Please view this demo in a modern browser that supports CSS Variables."
+      );
+  </script>
+</head>
+
+<body class="demo-1">
+  <main>
+    <div id="root"></div>
+  </main>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+
+</html>
