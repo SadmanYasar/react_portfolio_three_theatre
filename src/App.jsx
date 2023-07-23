@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from "react";
 import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import { Html, ScrollControls, Scroll, useScroll } from "@react-three/drei";
 import { getProject, val } from "@theatre/core";
-import theatreState from "./scrollState.json";
+import theatreState from "./scrollState2.json";
 import { SheetProvider, PerspectiveCamera, useCurrentSheet, editable as e } from "@theatre/r3f";
 
 import { Vector3, BufferGeometry, Float32BufferAttribute, PointsMaterial, Points, TextureLoader } from "three";

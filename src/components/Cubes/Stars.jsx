@@ -1,3 +1,4 @@
+import * as THREE from 'three'
 import React, {
     useMemo,
     useRef,
@@ -6,11 +7,14 @@ import React, {
     useCallback
 } from "react";
 import { random } from "lodash";
-import { useFrame } from "@react-three/fiber";
+import { useFrame, useLoader } from "@react-three/fiber";
+// import img from '/star3.png'
 
 export default () => {
     const mesh = useRef();
     const time = useRef(0);
+
+    // const texture = useLoader(THREE.TextureLoader, img);
 
     const [isHovered, setIsHovered] = useState(false);
     const [isActive, setIsActive] = useState(false);
@@ -25,7 +29,7 @@ export default () => {
     // random time mod factor
     const timeMod = useMemo(() => random(0.1, 4, true), []);
 
-    const colors = ['#ffffff', '#00FFFF']
+    const colors = ['#ffffff', '#00FFFF', '#e1affd', '#c175ff']
 
     // color
     const color = isHovered ? '#ffffff' : (isActive ? '#00FFFF' : colors[Math.floor(Math.random() * colors.length)]);
@@ -67,13 +71,15 @@ export default () => {
             ref={mesh}
             position={position}
         >
-            <coneBufferGeometry attach="geometry" args={[0.001]} />
+            <circleBufferGeometry attach="geometry" args={[0.005]} />
             <meshStandardMaterial
                 attach="material"
                 color={color}
                 roughness={0.5}
                 metalness={0.2}
             />
+            {/* <planeBufferGeometry attach="geometry" args={[0.05, 0.05]} />
+            <meshBasicMaterial attach="material" map={texture} /> */}
         </mesh>
     );
 };

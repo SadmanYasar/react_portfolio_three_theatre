@@ -13,7 +13,7 @@ export default () => {
     //     }
     // });
 
-    const nodesCubes = map(new Array(1000), (el, i) => {
+    const nodesCubes = map(new Array(1500), (el, i) => {
         return <Stars />;
     });
 
