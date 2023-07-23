@@ -1,8 +1,8 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import { Html, ScrollControls, Scroll, useScroll } from "@react-three/drei";
 import { getProject, val } from "@theatre/core";
-import theatreState from "./mgsflythrough.json";
+import theatreState from "./scrollState.json";
 import { SheetProvider, PerspectiveCamera, useCurrentSheet, editable as e } from "@theatre/r3f";
 
 import { Vector3, BufferGeometry, Float32BufferAttribute, PointsMaterial, Points, TextureLoader } from "three";
@@ -10,20 +10,6 @@ import Cubes from "./components/Cubes";
 import Lights from "./components/Lights";
 import Environment from "./components/Environment";
 import Stars from "./components/Cubes/Stars"
-
-
-// Create a helper function to generate random positions for stars
-function generateStarPositions(numStars) {
-  const positions = [];
-  for (let i = 0; i < numStars; i++) {
-    positions.push(
-      Math.random() * 600 - 300, // x position
-      Math.random() * 2000 - 400, // y position
-      Math.random() * 1000 - 600 // z position
-    );
-  }
-  return positions;
-}
 
 function Scene() {
   const sheet = useCurrentSheet();
@@ -96,12 +82,23 @@ export default function App() {
   return (
     <>
       <Canvas>
-        <ScrollControls pages={10}>
+        <ScrollControls pages={4}>
           <SheetProvider sheet={sheet}>
             <Scene />
           </SheetProvider>
           <Scroll html>
-            {/* <ToolTip /> */}
+            <section className="w-screen min-h-screen opacity-50">
+              Menu
+            </section>
+            <section className="w-screen min-h-screen opacity-50">
+              About
+            </section>
+            <section className="w-screen min-h-screen opacity-50">
+              Projects
+            </section>
+            <section className="w-screen min-h-screen opacity-50">
+              Contact
+            </section>
           </Scroll>
         </ScrollControls>
       </Canvas>

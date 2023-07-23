@@ -25,17 +25,17 @@ export default () => {
     // random time mod factor
     const timeMod = useMemo(() => random(0.1, 4, true), []);
 
-    const colors = ['#ffa11a', '#ffae21', '#ffbe40', '#f4442c', '#ff523a', '#00b35d', '#767574']
+    const colors = ['#ffffff', '#00FFFF']
 
     // color
-    const color = isHovered ? '#ffa11a' : (isActive ? '#f4442c' : colors[Math.floor(Math.random() * colors.length)]);
+    const color = isHovered ? '#ffffff' : (isActive ? '#00FFFF' : colors[Math.floor(Math.random() * colors.length)]);
 
     //useEffect of the activeState
     useEffect(() => {
         isActiveRef.current = isActive;
     }, [isActive]);
 
-    // raf loop
+    // ref loop
     useFrame(() => {
         mesh.current.rotation.y += 0.01 * timeMod;
         if (isActiveRef.current) {
@@ -66,11 +66,8 @@ export default () => {
         <mesh
             ref={mesh}
             position={position}
-            onClick={e => onClick(e)}
-            onPointerOver={e => onHover(e, true)}
-            onPointerOut={e => onHover(e, false)}
         >
-            <icosahedronBufferGeometry attach="geometry" args={[0.005]} />
+            <coneBufferGeometry attach="geometry" args={[0.001]} />
             <meshStandardMaterial
                 attach="material"
                 color={color}
