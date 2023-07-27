@@ -51,6 +51,33 @@ export default function About() {
                     Aug 2021 - Oct 2022
                 </div>
             </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-4 md:gap-x-16 pt-16">
+                <div className="text-2xl md:text-right uppercase font-bold text-slate-300">
+                    I <span className="animate-text font-bold bg-clip-text text-transparent bg-gradient-to-r from-red-300 via-red-500 to-orange-500">❤</span>
+                </div>
+                <div className="text-2xl md:col-start-2 md:col-end-4">
+                    <div className="font-bold">
+                        Music, Drawing, Playing Guitar, System Architecture
+                    </div>
+                </div>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-4 md:gap-x-16 pt-16">
+                <div className="text-2xl md:text-right uppercase font-bold text-slate-300">
+                    On the Web
+                </div>
+                <div className="text-2xl md:col-start-2 md:col-end-4">
+                    <span className="font-bold rounded-lg animate-text bg-clip-text text-transparent bg-gradient-to-r from-teal-300 via-purple-500 to-orange-500 p-2 hover:border-2 border-purple-500">
+                        @sadman_yasar
+                    </span>
+                </div>
+                <div className="text-2xl md:col-start-2 md:col-end-4">
+                    <span className="font-bold rounded-lg animate-text bg-clip-text text-transparent bg-gradient-to-r from-teal-300 via-purple-500 to-orange-500 p-2 hover:border-2 border-purple-500">
+                        @sadman_yasar
+                    </span>
+                </div>
+            </div>
         </section>
     );
 }

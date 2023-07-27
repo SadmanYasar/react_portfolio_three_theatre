@@ -13,6 +13,7 @@ import Stars from "./components/Cubes/Stars"
 import Hero from "./components/Sections/Hero";
 import About from "./components/Sections/About";
 import TechStacks from "./components/Sections/TechStacks";
+import Projects from "./components/Sections/Projects";
 
 function Scene() {
   const sheet = useCurrentSheet();
@@ -92,16 +93,11 @@ export default function App() {
           <Scroll html>
             <Hero />
             <About />
-            <TechStacks />
-            <section className="w-screen min-h-screen opacity-50">
-              Projects
-            </section>
-            <section className="w-screen opacity-50">
-              Contact
-            </section>
-            <section className="w-screen text-center">
+            <Projects />
+            <section className="w-screen text-center text-2xl pt-48 pb-12">
               @ 2023 Copyright Sadman Yasar Sayem
             </section>
+            <TechStacks />
           </Scroll>
         </ScrollControls>
       </Canvas>
