@@ -10,6 +10,9 @@ import Cubes from "./components/Cubes";
 import Lights from "./components/Lights";
 import Environment from "./components/Environment";
 import Stars from "./components/Cubes/Stars"
+import Hero from "./components/Sections/Hero";
+import About from "./components/Sections/About";
+import TechStacks from "./components/Sections/TechStacks";
 
 function Scene() {
   const sheet = useCurrentSheet();
@@ -87,12 +90,9 @@ export default function App() {
             <Scene />
           </SheetProvider>
           <Scroll html>
-            <section className="w-screen min-h-screen opacity-50">
-              Menu
-            </section>
-            <section className="w-screen min-h-screen opacity-50">
-              About
-            </section>
+            <Hero />
+            <About />
+            <TechStacks />
             <section className="w-screen min-h-screen opacity-50">
               Projects
             </section>
