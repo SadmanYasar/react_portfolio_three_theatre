@@ -9,7 +9,7 @@ export default function About() {
                     Full Stack Web Developer
                 </div>
                 <div className="text-center mt-8">
-                    <span className="p-4 text-xl md:text-2xl backdrop-blur-sm rounded-lg bg-slate-500 bg-opacity-50">
+                    <span className="p-4 text-xl md:text-2xl backdrop-blur-sm rounded-lg md:bg-slate-500 bg-opacity-50">
                         Hello! I am a freelancer based in Johor Bahru.
                     </span>
                 </div>
