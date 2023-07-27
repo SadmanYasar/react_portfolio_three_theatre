@@ -21,7 +21,7 @@ function Scene() {
 
   useEffect(() => {
     console.clear();
-    console.log('%cMade with Theatre.js and React Three Fiber by Sadman Yasar Sayem', 'color: yellow;');
+    console.log('%cMade with Theatre.js, Framer Motion and React Three Fiber by Sadman Yasar Sayem', 'color: yellow;');
     console.log('%cHire Me on Upwork https://www.upwork.com/freelancers/~01cfd344d945d1f282', 'color: yellow;');
   }, []);
 
@@ -96,8 +96,11 @@ export default function App() {
             <section className="w-screen min-h-screen opacity-50">
               Projects
             </section>
-            <section className="w-screen min-h-screen opacity-50">
+            <section className="w-screen opacity-50">
               Contact
+            </section>
+            <section className="w-screen text-center">
+              @ 2023 Copyright Sadman Yasar Sayem
             </section>
           </Scroll>
         </ScrollControls>

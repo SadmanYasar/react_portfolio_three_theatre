@@ -57,7 +57,7 @@ function ParallaxText({ children, baseVelocity = 100 }) {
      */
     return (
         <div className="parallax">
-            <motion.div className="scroller" style={{ x }}>
+            <motion.div className="scroller animate-text font-bold bg-clip-text text-transparent bg-gradient-to-r from-teal-300 via-purple-500 to-orange-500" style={{ x }}>
                 <span>{children}</span>
                 <span>{children}</span>
                 <span>{children}</span>
@@ -69,7 +69,7 @@ function ParallaxText({ children, baseVelocity = 100 }) {
 
 export default function TechStacks() {
     return (
-        <section className="w-screen fixed flex flex-col space-y-4 font-fira text-6xl uppercase italic font-bold">
+        <section className="w-screen fixed flex flex-col space-y-4 text-6xl uppercase italic font-bold">
             <ParallaxText baseVelocity={-2}>React Express GraphQL AWS AliCloud MongoDB Nodejs Selenium Cypress Docker Strapi</ParallaxText>
             <ParallaxText baseVelocity={2}>Next.js Three.js Astro Framer Motion Tailwind Linux SQL NoSQL Git React Native Ionic</ParallaxText>
         </section>
