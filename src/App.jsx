@@ -86,7 +86,6 @@ export default function App() {
 
   return (
     <>
-      <div className="cursor" />
       <Canvas>
         <ScrollControls pages={4}>
           <SheetProvider sheet={sheet}>
