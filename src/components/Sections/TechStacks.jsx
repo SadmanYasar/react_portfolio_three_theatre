@@ -69,7 +69,7 @@ function ParallaxText({ children, baseVelocity = 100 }) {
 
 export default function TechStacks() {
     return (
-        <section className="w-screen fixed flex flex-col space-y-4 text-6xl uppercase italic font-bold">
+        <section className="w-screen fixed flex flex-col space-y-4 text-6xl uppercase font-bold">
             <ParallaxText baseVelocity={-2}>React Express GraphQL AWS AliCloud MongoDB Nodejs Selenium Cypress Docker Strapi</ParallaxText>
             <ParallaxText baseVelocity={2}>Next.js Three.js Astro Framer Motion Tailwind Linux SQL NoSQL Git React Native Ionic</ParallaxText>
         </section>

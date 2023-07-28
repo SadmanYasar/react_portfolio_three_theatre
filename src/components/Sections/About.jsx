@@ -9,7 +9,7 @@ export default function About() {
                     Full Stack Web Developer
                 </div>
                 <div className="text-center mt-8">
-                    <span className="p-4 text-xl md:text-2xl backdrop-blur-sm rounded-lg md:bg-slate-500 bg-opacity-50">
+                    <span className="p-4 text-xl md:text-2xl rounded-lg md:bg-white/20">
                         Hello! I am a freelancer based in Johor Bahru.
                     </span>
                 </div>
@@ -66,14 +66,9 @@ export default function About() {
                     On the Web
                 </div>
                 <div className="text-2xl md:col-start-2 md:col-end-4">
-                    <span className="font-bold rounded-lg animate-text bg-clip-text text-transparent bg-gradient-to-r from-teal-300 via-purple-500 to-orange-500 p-2 hover:border-2 border-purple-500">
-                        @sadman_yasar
-                    </span>
-                </div>
-                <div className="text-2xl md:col-start-2 md:col-end-4">
-                    <span className="font-bold rounded-lg animate-text bg-clip-text text-transparent bg-gradient-to-r from-teal-300 via-purple-500 to-orange-500 p-2 hover:border-2 border-purple-500">
-                        @sadman_yasar
-                    </span>
+                    <a href="https://links-sadmanyasar.netlify.app/" target="_blank" className="font-bold rounded-lg animate-text bg-clip-text text-transparent bg-gradient-to-r from-teal-300 via-purple-500 to-orange-500 p-2 focus:text-white hover:text-white">
+                        @sadmanyasar_
+                    </a>
                 </div>
             </div>
         </section>

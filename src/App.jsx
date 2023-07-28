@@ -2,7 +2,8 @@ import React, { useEffect, useRef } from "react";
 import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import { Html, ScrollControls, Scroll, useScroll } from "@react-three/drei";
 import { getProject, val } from "@theatre/core";
-import theatreState from "./scrollState2.json";
+// import theatreState from "./scrollState2.json";
+import theatreState from "./scrollState3.json";
 import { SheetProvider, PerspectiveCamera, useCurrentSheet, editable as e } from "@theatre/r3f";
 
 import { Vector3, BufferGeometry, Float32BufferAttribute, PointsMaterial, Points, TextureLoader } from "three";
@@ -85,6 +86,7 @@ export default function App() {
 
   return (
     <>
+      <div className="cursor" />
       <Canvas>
         <ScrollControls pages={4}>
           <SheetProvider sheet={sheet}>
@@ -94,9 +96,9 @@ export default function App() {
             <Hero />
             <About />
             <Projects />
-            <section className="w-screen text-center text-2xl pt-48 pb-12">
+            <footer className="w-screen text-center text-2xl pt-48 pb-12">
               @ 2023 Copyright Sadman Yasar Sayem
-            </section>
+            </footer>
             <TechStacks />
           </Scroll>
         </ScrollControls>
