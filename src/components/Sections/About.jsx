@@ -65,9 +65,18 @@ export default function About() {
                 <div className="text-2xl md:text-right uppercase font-bold text-slate-300">
                     On the Web
                 </div>
-                <div className="text-2xl md:col-start-2 md:col-end-4">
-                    <a href="https://links-sadmanyasar.netlify.app/" target="_blank" className="font-bold rounded-lg animate-text bg-clip-text text-transparent bg-gradient-to-r from-teal-300 via-purple-500 to-orange-500 p-2 focus:text-white hover:text-white">
-                        @sadmanyasar_
+                <div className="grid grid-cols-4 text-2xl md:col-start-2 md:col-end-4">
+                    <a href="https://www.upwork.com/freelancers/~01cfd344d945d1f282?viewMode=1" target="_blank" className="font-bold rounded-lg animate-text bg-clip-text text-transparent bg-gradient-to-r from-teal-300 via-purple-500 to-orange-500 p-2 focus:text-white hover:text-white">
+                        Upwork
+                    </a>
+                    <a href="https://www.linkedin.com/in/Sadman-Yasar-Sayem/" target="_blank" className="font-bold rounded-lg animate-text bg-clip-text text-transparent bg-gradient-to-r from-teal-300 via-purple-500 to-orange-500 p-2 focus:text-white hover:text-white">
+                        LinkedIn
+                    </a>
+                    <a href="https://github.com/SadmanYasar" target="_blank" className="font-bold rounded-lg animate-text bg-clip-text text-transparent bg-gradient-to-r from-teal-300 via-purple-500 to-orange-500 p-2 focus:text-white hover:text-white">
+                        Github
+                    </a>
+                    <a href="https://www.behance.net/sadmanyasar" target="_blank" className="font-bold rounded-lg animate-text bg-clip-text text-transparent bg-gradient-to-r from-teal-300 via-purple-500 to-orange-500 p-2 focus:text-white hover:text-white">
+                        Behance
                     </a>
                 </div>
             </div>
