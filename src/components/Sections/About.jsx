@@ -67,16 +67,16 @@ export default function About() {
                 </div>
                 <div className="grid grid-cols-4 text-2xl md:col-start-2 md:col-end-4">
                     <a href="https://www.upwork.com/freelancers/~01cfd344d945d1f282?viewMode=1" target="_blank" className="font-bold rounded-lg">
-                        <img src={'/upwork.svg'} className="w-12 h-12 object-cover rounded-full bg-gradient-to-r from-teal-300 via-purple-500 to-orange-500 p-2 focus:text-white hover:animate-text" />
+                        <img src={'/upwork.svg'} className="w-12 h-12 object-cover rounded-full bg-white hover:bg-gradient-to-r from-teal-300 via-purple-500 to-orange-500 p-2 focus:text-white hover:animate-text" />
                     </a>
                     <a href="https://www.linkedin.com/in/Sadman-Yasar-Sayem/" target="_blank" className="font-bold rounded-lg">
-                        <img src={'/linkedin.svg'} className="w-12 h-12 object-cover rounded-full bg-gradient-to-r from-teal-300 via-purple-500 to-orange-500 p-2 focus:text-white hover:animate-text" />
+                        <img src={'/linkedin.svg'} className="w-12 h-12 object-cover rounded-full bg-white hover:bg-gradient-to-r from-teal-300 via-purple-500 to-orange-500 p-2 focus:text-white hover:animate-text" />
                     </a>
                     <a href="https://github.com/SadmanYasar" target="_blank" className="font-bold rounded-lg">
-                        <img src={'/github.svg'} className="w-12 h-12 object-cover rounded-full bg-gradient-to-r from-teal-300 via-purple-500 to-orange-500 p-2 focus:text-white hover:animate-text" />
+                        <img src={'/github.svg'} className="w-12 h-12 object-cover rounded-full bg-white hover:bg-gradient-to-r from-teal-300 via-purple-500 to-orange-500 p-2 focus:text-white hover:animate-text" />
                     </a>
                     <a href="https://www.behance.net/sadmanyasar" target="_blank" className="font-bold rounded-lg">
-                        <img src={'/behance.svg'} className="w-12 h-12 object-cover rounded-full bg-gradient-to-r from-teal-300 via-purple-500 to-orange-500 p-2 focus:text-white hover:animate-text" />
+                        <img src={'/behance.svg'} className="w-12 h-12 object-cover rounded-full bg-white hover:bg-gradient-to-r from-teal-300 via-purple-500 to-orange-500 p-2 focus:text-white hover:animate-text" />
                     </a>
                 </div>
             </div>
