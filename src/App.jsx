@@ -96,9 +96,7 @@ export default function App() {
             <Hero />
             <About />
             <Projects />
-            <footer className="w-screen text-center text-2xl md:py-4">
-            </footer>
-            <div className="space-y-4 pt-4">
+            <div className="space-y-4 md:py-4 pt-4">
               <TechStacks />
               <TechStacks />
               <TechStacks />
