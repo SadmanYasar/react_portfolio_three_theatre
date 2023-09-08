@@ -71,7 +71,7 @@ export default () => {
             ref={mesh}
             position={position}
         >
-            <circleBufferGeometry attach="geometry" args={[0.005]} />
+            <circleGeometry attach="geometry" args={[0.005, 6]} />
             <meshStandardMaterial
                 attach="material"
                 color={color}

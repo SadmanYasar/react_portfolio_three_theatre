@@ -96,11 +96,7 @@ export default function App() {
             <Hero />
             <About />
             <Projects />
-            <div className="space-y-4 md:py-4 pt-4">
-              <TechStacks />
-              <TechStacks />
-              <TechStacks />
-            </div>
+            <TechStacks />
             <section
               className="w-screen max-w-5xl min-h-screen mx-auto px-4 flex flex-col justify-center items-center flex-wrap">
               <h1 className="font-normal text-3xl md:text-4xl inline-block"><span className="animate-text font-bold bg-clip-text text-transparent bg-gradient-to-r from-teal-300 via-purple-500 to-orange-500">

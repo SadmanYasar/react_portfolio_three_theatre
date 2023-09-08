@@ -1,3 +1,5 @@
+const { fontFamily } = require('tailwindcss/defaultTheme');
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
@@ -30,6 +32,8 @@ export default {
     },
     fontFamily: {
       'fira': ['Fira Code', 'monospace'],
+      sans: ['Satoshi', ...fontFamily.sans],
+      mono: ['Cascadia', ...fontFamily.mono],
     },
   },
   plugins: [],

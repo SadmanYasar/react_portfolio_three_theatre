@@ -9,6 +9,7 @@ import {
     useAnimationFrame
 } from "framer-motion";
 import { wrap } from "@motionone/utils";
+import Marquee from "react-fast-marquee";
 
 function ParallaxText({ children, baseVelocity = 100 }) {
     const baseX = useMotionValue(0);
@@ -67,11 +68,35 @@ function ParallaxText({ children, baseVelocity = 100 }) {
     );
 }
 
+const logoUrls = [
+    '/react-native.svg',
+    '/graphql.svg',
+    '/aws.svg',
+    '/mongodb.svg',
+    '/nodejs.svg',
+    '/svelte.svg',
+    '/tailwind.svg',
+    '/prisma.svg',
+    '/docker.svg',
+    '/postgres.svg',
+]
+
 export default function TechStacks() {
     return (
-        <section className="w-screen flex flex-col space-y-4 text-6xl uppercase font-bold">
-            <ParallaxText baseVelocity={-1}>React Express GraphQL AWS AliCloud MongoDB Nodejs Selenium Cypress Docker Strapi</ParallaxText>
-            <ParallaxText baseVelocity={1}>Next.js Three.js Astro Framer Motion Tailwind Linux SQL NoSQL Git React Native Ionic</ParallaxText>
-        </section>
+        <>
+            <div className="w-screen pt-12">
+                <Marquee autoFill gradient gradientColor={[0, 0, 0]} speed={60}>
+                    {logoUrls.map((logoUrl) => <img src={logoUrl} className="w-32 h-32 px-4 filter grayscale hover:filter-none" />)}
+                </Marquee>
+                <Marquee autoFill direction="right" gradient gradientColor={[0, 0, 0]}>
+                    {logoUrls.map((logoUrl) => <img src={logoUrl} className="w-24 h-24 px-4 filter grayscale hover:filter-none" />)}
+                </Marquee>
+            </div>
+        </>
     );
 }
+
+/* <section className="w-screen flex flex-col space-y-4 text-6xl uppercase font-bold">
+            <ParallaxText baseVelocity={-1}>React Express GraphQL AWS AliCloud MongoDB Nodejs Selenium Cypress Docker Strapi</ParallaxText>
+            <ParallaxText baseVelocity={1}>Next.js Three.js Astro Framer Motion Tailwind Linux SQL NoSQL Git React Native Ionic</ParallaxText>
+        </section> */
