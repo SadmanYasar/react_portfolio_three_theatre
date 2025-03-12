@@ -1,4 +1,57 @@
-@import "tailwindcss";
+@import 'tailwindcss';
+
+@theme {
+  --ease-*: initial;
+  --ease-out-flex: cubic-bezier(0.05, 0.6, 0.4, 0.9);
+
+  --animate-*: initial;
+  --animate-text: text 5s ease infinite;
+
+  --font-*: initial;
+  --font-fira: Fira Code, monospace;
+  --font-sans:
+    Satoshi, ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  --font-mono:
+    Cascadia, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    'Liberation Mono', 'Courier New', monospace;
+
+  --background-image-gradient-radial: radial-gradient(
+    ellipse at bottom,
+    var(--bgColor) 0%,
+    var(--bgColor2) 100%
+  );
+
+  @keyframes text {
+    0%,
+    100% {
+      background-size: 200% 200%;
+      background-position: left center;
+    }
+    50% {
+      background-size: 200% 200%;
+      background-position: right center;
+    }
+  }
+}
+
+/*
+  The default border color has changed to `currentColor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
+  }
+}
 
 @font-face {
   font-family: "Satoshi";
