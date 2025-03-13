@@ -895,6 +895,21 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@react-three/postprocessing@npm:^3.0.4":
+  version: 3.0.4
+  resolution: "@react-three/postprocessing@npm:3.0.4"
+  dependencies:
+    maath: "npm:^0.6.0"
+    n8ao: "npm:^1.9.4"
+    postprocessing: "npm:^6.36.6"
+  peerDependencies:
+    "@react-three/fiber": ^9.0.0
+    react: ^19.0
+    three: ">= 0.156.0"
+  checksum: 10c0/7a9f6af37da29af6844bd8ad781ceafa2c2cee29954ccf6c41633b2afd4cf7da41eb668a62b3a942a35e400ac8c7685800394a96eed95dde9ec582decfdade5b
+  languageName: node
+  linkType: hard
+
 "@react-three/rapier@npm:^2.0.0":
   version: 2.0.0
   resolution: "@react-three/rapier@npm:2.0.0"
@@ -1327,6 +1342,20 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@tailwindcss/postcss@npm:^4.0.13":
+  version: 4.0.13
+  resolution: "@tailwindcss/postcss@npm:4.0.13"
+  dependencies:
+    "@alloc/quick-lru": "npm:^5.2.0"
+    "@tailwindcss/node": "npm:4.0.13"
+    "@tailwindcss/oxide": "npm:4.0.13"
+    lightningcss: "npm:1.29.2"
+    postcss: "npm:^8.4.41"
+    tailwindcss: "npm:4.0.13"
+  checksum: 10c0/ca80bc21f48353df33e6c57699cd33958802cb60f5041a6b39d7af779437ba25b650b5c59580699e949363564d4f14c2645b030a18ceda40a39b45b2b6f5cd74
+  languageName: node
+  linkType: hard
+
 "@tailwindcss/vite@npm:^4.0.13":
   version: 4.0.13
   resolution: "@tailwindcss/vite@npm:4.0.13"
@@ -1485,6 +1514,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/react-lottie@npm:^1.2.10":
+  version: 1.2.10
+  resolution: "@types/react-lottie@npm:1.2.10"
+  dependencies:
+    "@types/react": "npm:*"
+  checksum: 10c0/c0b71c534a8f6e7540a620bfeb98264217a66db1f886f499a49e5bd39960fbc0897d9c5475e575d29ebb225b50bf51f6032053a51a1d3e919396a322e7f183b1
+  languageName: node
+  linkType: hard
+
 "@types/react-reconciler@npm:^0.28.9":
   version: 0.28.9
   resolution: "@types/react-reconciler@npm:0.28.9"
@@ -1494,7 +1532,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:^19.0.10":
+"@types/react@npm:*, @types/react@npm:^19.0.10":
   version: 19.0.10
   resolution: "@types/react@npm:19.0.10"
   dependencies:
@@ -1589,6 +1627,16 @@ __metadata:
     "@typescript-eslint/types": "npm:8.26.1"
     eslint-visitor-keys: "npm:^4.2.0"
   checksum: 10c0/51b1016d06cd2b9eac0a213de418b0a26022fd3b71478014541bfcbc2a3c4d666552390eb9c209fa9e52c868710d9f1b21a2c789d35c650239438c366a27a239
+  languageName: node
+  linkType: hard
+
+"@uidotdev/usehooks@npm:^2.4.1":
+  version: 2.4.1
+  resolution: "@uidotdev/usehooks@npm:2.4.1"
+  peerDependencies:
+    react: ">=18.0.0"
+    react-dom: ">=18.0.0"
+  checksum: 10c0/181c43fb324dbe4fef9762c61ab4b8235efa48abedf39a9bfeab65872522c43dae789c4f85b82a1164ed7bb18ae7ff25c3a19e7c4e0eb944937ac7f8109cee9b
   languageName: node
   linkType: hard
 
@@ -1915,8 +1963,10 @@ __metadata:
     "@motionone/utils": "npm:^10.18.0"
     "@react-three/drei": "npm:^10.0.4"
     "@react-three/fiber": "npm:^9.1.0"
+    "@react-three/postprocessing": "npm:^3.0.4"
     "@react-three/rapier": "npm:^2.0.0"
     "@react-three/uikit": "npm:^0.8.12"
+    "@tailwindcss/postcss": "npm:^4.0.13"
     "@tailwindcss/vite": "npm:^4.0.13"
     "@theatre/core": "npm:^0.7.2"
     "@theatre/r3f": "npm:^0.7.2"
@@ -1925,8 +1975,10 @@ __metadata:
     "@types/node": "npm:^22.13.10"
     "@types/react": "npm:^19.0.10"
     "@types/react-dom": "npm:^19.0.4"
+    "@types/react-lottie": "npm:^1.2.10"
     "@types/three": "npm:^0.174.0"
     "@typescript-eslint/parser": "npm:^8.26.1"
+    "@uidotdev/usehooks": "npm:^2.4.1"
     "@vitejs/plugin-react": "npm:^4.3.4"
     "@vitejs/plugin-react-swc": "npm:^3.8.0"
     autoprefixer: "npm:^10.4.21"
@@ -1937,6 +1989,7 @@ __metadata:
     framer-motion: "npm:^12.5.0"
     gsap: "npm:^3.12.7"
     lodash: "npm:^4.17.21"
+    nice-color-palettes: "npm:^4.0.0"
     postcss: "npm:^8.5.3"
     prop-types: "npm:^15.8.1"
     react: "npm:^19.0.0"
@@ -3500,6 +3553,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"maath@npm:^0.6.0":
+  version: 0.6.0
+  resolution: "maath@npm:0.6.0"
+  peerDependencies:
+    "@types/three": ">=0.144.0"
+    three: ">=0.144.0"
+  checksum: 10c0/a9b716841d225338339fbe776c94e99f98136f24360e34c06698e2f1658bffc9b09321d2463e730810940de9801b73154de9afa6647595ae1d7b7662f4da6ef6
+  languageName: node
+  linkType: hard
+
 "make-fetch-happen@npm:^14.0.3":
   version: 14.0.3
   resolution: "make-fetch-happen@npm:14.0.3"
@@ -3714,6 +3777,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"n8ao@npm:^1.9.4":
+  version: 1.9.4
+  resolution: "n8ao@npm:1.9.4"
+  peerDependencies:
+    postprocessing: ">=6.30.0"
+    three: ">=0.137"
+  checksum: 10c0/7baeff04be930582aeccd6456fa28b2710b3c6187fe5182ffb1a8a7154fab43a9a0db10b359290d22239b567d147612fc28dac3f0a7c7ad258749530ada2f5e2
+  languageName: node
+  linkType: hard
+
 "nanoid@npm:^3.3.6":
   version: 3.3.6
   resolution: "nanoid@npm:3.3.6"
@@ -3743,6 +3816,13 @@ __metadata:
   version: 1.0.0
   resolution: "negotiator@npm:1.0.0"
   checksum: 10c0/4c559dd52669ea48e1914f9d634227c561221dd54734070791f999c52ed0ff36e437b2e07d5c1f6e32909fc625fe46491c16e4a8f0572567d4dd15c3a4fda04b
+  languageName: node
+  linkType: hard
+
+"nice-color-palettes@npm:^4.0.0":
+  version: 4.0.0
+  resolution: "nice-color-palettes@npm:4.0.0"
+  checksum: 10c0/e38276ba5655e7867cd53329adb215a18635496d81cf90a44d9ddcaa4ea11d87449cd19cf3d6c8e283bb5eb59e8f44e8372be7249c8c03160a958e7a4591c0ee
   languageName: node
   linkType: hard
 
@@ -4106,7 +4186,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss@npm:^8.5.3":
+"postcss@npm:^8.4.41, postcss@npm:^8.5.3":
   version: 8.5.3
   resolution: "postcss@npm:8.5.3"
   dependencies:
@@ -4114,6 +4194,15 @@ __metadata:
     picocolors: "npm:^1.1.1"
     source-map-js: "npm:^1.2.1"
   checksum: 10c0/b75510d7b28c3ab728c8733dd01538314a18c52af426f199a3c9177e63eb08602a3938bfb66b62dc01350b9aed62087eabbf229af97a1659eb8d3513cec823b3
+  languageName: node
+  linkType: hard
+
+"postprocessing@npm:^6.36.6":
+  version: 6.37.1
+  resolution: "postprocessing@npm:6.37.1"
+  peerDependencies:
+    three: ">= 0.157.0 < 0.175.0"
+  checksum: 10c0/692fb0f3940b9a510416f56bbc0982372c6fcca8dbdfb218e738aedc62ede581d72de2e545f476f10811b62be18d7740bee68540d5dc55c32e6d94316be0b5db
   languageName: node
   linkType: hard
 

@@ -5,14 +5,16 @@ import ReactDOM from "react-dom/client";
 // import App from "./App";
 const App = lazy(() => import("./App"));
 import "./index.css";
-import Fallback from "./components/Pages/Fallback";
+import Loading from "./components/Pages/Loading";
+// import App from "./App";
+import LoadingScreen from "./components/Pages/Loading";
 
-studio.extend(extension);
-studio.initialize();
+// studio.extend(extension);
+// studio.initialize();
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <Suspense fallback={<Fallback />}>
+    <Suspense fallback={<LoadingScreen />}>
       <App />
     </Suspense>
   </React.StrictMode>
